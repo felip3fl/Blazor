@@ -14,7 +14,7 @@
 
 <p align="justify">
  Projeto em desenvolvimento para estudo a tecnologia do framework Blazor. Seguindo todos os ensinamento do curso Desenvolvedor.io e outras fontes de conhecimento.
-
+</p>
 
 <BR>
 
