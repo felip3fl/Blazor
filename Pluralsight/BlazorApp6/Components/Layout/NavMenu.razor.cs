@@ -7,7 +7,12 @@ namespace BlazorApp6.Components.Layout
         [Inject]
         public NavigationManager NavigationManager { get; set; } = default!;
 
-    public void NavigateToHome()
+        public NavMenu()
+        {
+            Console.WriteLine("oioioi");
+        }
+
+        public void NavigateToHome()
         {
             NavigationManager.NavigateTo("/");
         }

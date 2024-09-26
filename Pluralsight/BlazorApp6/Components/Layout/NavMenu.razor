@@ -1,12 +1,13 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿@rendermode InteractiveServer
+
+
+<div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">BlazorApp6</a>
     </div>
 </div>
 
 <input type="checkbox" title="Navigation menu" class="navbar-toggler" />
-
-
 
 
 <div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
@@ -29,12 +30,10 @@
             </NavLink>
         </div>
 
-            
-        <button @onclick="(() => NavigateToHome())">
-            Detalhes do carro (Botao)
-        </button>
 
-        <button class="btn btn-primary" @onclick="@(()=>NavigationManager.NavigateTo("/MyPage"))">Click me</button>
+        <button class="btn btn-primary" @onclick="()=>NavigateToDetails()"> Navigate to the Counter component </button>
+
+        <button type="button" class="btn btn-primary" @onclick="(()=>NavigateToDetails())">Click me</button>
 
 
         <div class="nav-item px-3">
